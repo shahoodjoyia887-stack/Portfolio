@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg bg-transparent py-2">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand p-0" href="#">
+          <h2 class="fw-bold mb-0 text-white" style="font-size: 2rem;">Savora</h2>
+        </a>
+
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+
+          <!-- Navigation Links -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-white nav-hover" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-white nav-hover" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-white nav-hover" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-white nav-hover" href="#book">Book a table</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-white nav-hover" href="#chefs">Chefs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-white nav-hover" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase fw-bold text-white nav-hover" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Theme Toggle & CTA -->
+          <div class="d-flex align-items-center justify-content-center mt-3 mt-lg-0">
+            <button class="header-btn">Book a table</button>
+            <button id="themeToggle" class="theme-toggle" title="Toggle Dark/Light Mode">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ###########################section-home########################## -->
+  <section id="home" class="section-home p-5 reveal-left">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-6 col-md-12 mb-4 justify-content-center">
+          <h1 class="display-3 fw-bold mb-4">Savor the Essence of Mediterranean Dining</h1>
+          <p class="lead mb-5 text-secondary">Discover a fusion of tradition and innovation at Savora. Our artisans
+            craft each dish with passion, bringing you the vibrant soul of Mediterranean coasts through time-honored
+            recipes and the freshest ingredients.</p>
+          <div class="d-flex gap-3 mb-5">
+            <button class="btn btn-primary rounded-pill px-4 py-2">Book a Table</button>
+            <button class="btn btn-outline rounded-pill px-4 py-2">View Menu</button>
+          </div>
+          <div class="d-flex flex-column gap-3 mt-4 home-info-container">
+            <!-- Open Daily -->
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-regular fa-clock fs-4 text-accent"></i>
+              <div>
+                <h6 class="fw-bold mb-0 text-uppercase" style="font-size: 0.9rem;">Open Daily</h6>
+                <p class="mb-0 text-muted small">10:00 AM - 11:00 PM</p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-location-dot fs-4 text-accent"></i>
+              <div>
+                <h6 class="fw-bold mb-0 text-uppercase" style="font-size: 0.9rem;">Location</h6>
+                <p class="mb-0 text-muted small">Downtown Culinary District</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="container-fluid hero-section">
+            <div class="layer">
+              <img src="home 1.webp" class="float-img img-right img-fluid" alt="">
+              <img src="pic-2.webp" class="float-img img-left img-fluid" alt="">
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #################################about-section################################ -->
+  <section id="about" class="about-section mt-4 py-4 reveal-right">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <div class="about-img-container">
+            <img src="chef.webp" class="img-fluid rounded-4 shadow-lg" alt="About Chef">
+            <div class="experience-badge">
+              <span class="years h2 fw-bold d-block text-white mb-0">25+</span>
+              <span class="text small text-white text-uppercase fw-bold">Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <h2 class="fw-bold fs-2 mb-3">Meet OUR Executive Chef</h2>
+          <strong class="py-2 d-block">Crafting delicious Mediterranean dishes. Dining Experience 1999</strong>
+          <p class="py-2" style="font-style: italic;">lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            auctor, nisl eget ultricies
+            tincidunt, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc.</p>
+          <p class="mb-3" style="font-style: italic;">Dolor sit amet consectetur adipisicing elit. Illum assumenda nisi
+            laudantium, possimus modi
+            molestiae
+            magnam officia, reprehenderit minima quia, dolores quidem culpa at?</p>
+          <div class="container py-3">
+
+            <!-- Awards -->
+
+            <div class="row awards mb-3">
+              <div class="col-md-6 d-flex align-items-center">
+                <i class="fa-regular fa-circle-check"></i>
+                <strong>James Beard Award</strong>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-center">
+                <i class="fa-regular fa-star"></i>
+                <strong>Michelin Recognition</strong>
+              </div>
+            </div>
+
+            <!-- Quote -->
+            <div class="quote-box mb-3">
+              <p>
+                "Cooking is not just about feeding people; it's about creating moments
+                that bring families and friends together around the table."
+              </p>
+              <strong>- Chef Alessandro Romano</strong>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex gap-3">
+              <button class="btn-orange">View Menu</button>
+              <button class="btn-outline-orange">Book a Table</button>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="menu-img d-flex  justify-content-center gap-3">
+        <div class="col-3 menu-card ">
+          <img class="img-fluid menu-card-img border border-white rounded h-100" src="home-page.webp" alt="">
+          <div class="overlay-text">
+            <h1>Elegent Dining</h1>
+            <p>Sophiscated ambience for every occasion</p>
+          </div>
+        </div>
+        <div class="col-3 menu-card">
+          <img class="img-fluid menu-card-img border border-white rounded" src="home 1.webp" alt="">
+          <div class="overlay-text">
+            <h1>Fresh Ingredients</h1>
+            <p>Locally sourced for authentic flavors</p>
+          </div>
+        </div>
+        <div class="col-3 menu-card">
+          <img class="img-fluid menu-card-img" src="misc-7.webp" alt="">
+          <div class="overlay-text">
+            <h1>Exquisite Flavors</h1>
+            <p>A culinary journey in every bite</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- ###################################menu-page#################################### -->
+  <section id="menu" class="menu-section reveal-left">
+    <h2>Menu</h2>
+    <div class="underline">
+      <span></span>
+    </div>
+
+
+
+    <p class="menu-text">
+      Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+    </p>
+
+    <div class="menu-tabs">
+      <button class="tab active">
+        <i class="fa-solid fa-utensils"></i> Starters
+      </button>
+
+      <button class="tab">
+        <i class="fa-solid fa-bowl-food"></i> Main Courses
+      </button>
+
+      <button class="tab">
+        <i class="fa-solid fa-cake-candles"></i> Desserts
+      </button>
+
+      <button class="tab">
+        <i class="fa-solid fa-mug-hot"></i> Beverages
+      </button>
+    </div>
+  </section>
+  <!-- ----menu----- -->
+
+  <div class="container menu-page     ">
+    <div class="row ">
+      <div class="col-md-6">
+
+        <div class="menu-card">
+
+          <!-- Image -->
+          <div class="menu-img">
+            <span class="badge-custom">CHEF'S PICK</span>
+            <img src="starter-6.webp" class="img-fluid" alt="">
+          </div>
+
+          <!-- Content -->
+          <div class="menu-content  ">
+            <div class="d-flex align-items-center gap-3">
+              <span class="icon">
+                <i class="fa-solid fa-fire "></i>
+              </span>
+              <h4>Crispy Calamari Rings</h4>
+
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temporadipisicing elit sed do
+              eiusmod temporray
+            </p>
+
+            <div class="menu-footer ">
+              <span class="price">$18</span>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="menu-card">
+
+          <!-- Image -->
+          <div class="menu-img">
+            <span class="badge-custom">CHEF'S PICK</span>
+            <img src="starter-3.webp" class="img-fluid" alt="">
+          </div>
+
+          <!-- Content -->
+          <div class="menu-content ">
+            <div class="d-flex align-items-center gap-3">
+              <span class="icon">
+                <i class="fa-sharp fa-solid fa-leaf"></i>
+              </span>
+              <h4>Truffle Arancini</h4>
+
+            </div>
+            <p>
+              0mni labels orem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
+            </p>
+
+            <div class="menu-footer ">
+              <span class="price">$16</span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="menu-card">
+
+          <!-- Image -->
+          <div class="menu-img">
+            <span class="badge-custom">CHEF'S PICK</span>
+            <img src="starter-7.webp" class="img-fluid" alt="">
+          </div>
+
+          <!-- Content -->
+          <div class="menu-content ">
+            <div class="d-flex align-items-center gap-3">
+              <span class="icon">
+                <i class="fa-solid fa-check-double"></i>
+              </span>
+              <h4>Salmon Caviche</h4>
+
+            </div>
+            <p>
+              Different labels orem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
+            </p>
+
+            <div class="menu-footer ">
+              <span class="price">$22</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="menu-card">
+
+          <!-- Image -->
+          <div class="menu-img">
+            <span class="badge-custom">CHEF'S PICK</span>
+            <img src="starter-5.webp" class="img-fluid" alt="">
+          </div>
+
+          <!-- Content -->
+          <div class="menu-content ">
+            <div class="d-flex align-items-center gap-3">
+              <span class="icon">
+                <i class="fa-solid fa-star"></i>
+
+              </span>
+              <h4>Beef Tartare</h4>
+
+            </div>
+            <p>
+              Special tasting labels orem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
+            </p>
+
+            <div class="menu-footer ">
+              <span class="price">$28</span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class=" row ">
+      <div class="col-12 text-center mt-5 mb-5">
+        <button> Download Full Menu(PDF) </button>
+      </div>
+    </div>
+  </div>
+  <!-- Placeholder sections for chefs, events, and contact -->
+  <!-- ##############################book-a-tabel##############################  -->
+  <div id="book" class="container book-tabel mb-4 reveal-right">
+
+    <!-- Added Header as requested -->
+    <div class="text-center mb-3">
+      <h2 class="display-6 fw-bold fs-1 section-title">Book a Table</h2>
+      <div class="underline mx-auto">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12 header mb-3 mb-lg-0">
+        <div>
+          <h6>MAKE A RESERVATION</h6>
+          <h1>Reserve Your Table Today</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, consectetur.</p>
+          <form class="mt-3">
+
+            <!-- Full Name -->
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Your Full Name">
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="+92 3XX XXXXXXX">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+
+            <!-- Number of People -->
+            <div class="mb-3">
+              <label class="form-label">Number of People</label>
+              <select class="form-select">
+                <option selected>Select guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+              </select>
+            </div>
+
+            <!-- Reservation Date -->
+            <div class="mb-3">
+              <label class="form-label">Reservation Date</label>
+              <input type="date" class="form-control">
+            </div>
+
+            <!-- Reservation Time -->
+            <div class="mb-3">
+              <label class="form-label">Reservation Time</label>
+              <input type="time" class="form-control">
+            </div>
+
+            <!-- Special Requests -->
+            <div class="mb-3">
+              <label class="form-label">Special Requests</label>
+              <textarea class="form-control" rows="3"
+                placeholder="Allergies, special occasions, seating preferences"></textarea>
+            </div>
+
+            <!-- Button -->
+            <div class="text-center menu-page">
+              <button class="px-5 py-2 rounded-pill">
+                Confirm Reservation
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div>
+          <img src="book.webp" alt="">
+        </div>
+        <div class="container my-3">
+          <h2 class="mb-4 fw-bold">Restaurant Information</h2>
+
+          <!-- Opening Hours -->
+          <div class="info-box d-flex align-items-start mb-4">
+            <div class="icon-box">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Opening Hours</h6>
+              <p class="mb-0 text-muted">
+                Mon - Fri: 11:00 AM - 11:00 PM <br>
+                Sat - Sun: 10:00 AM - 12:00 AM
+              </p>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="info-box d-flex align-items-start mb-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Our Location</h6>
+              <p class="mb-0 text-muted">
+                5625 Riverside Avenue <br>
+                Newport, RI 02840
+              </p>
+            </div>
+          </div>
+
+          <!-- Reservations -->
+          <div class="info-box d-flex align-items-start mb-4">
+            <div class="icon-box">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Reservations</h6>
+              <p class="mb-0 text-muted">+1 (401) 555-8792</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="info-box d-flex align-items-start mb-4">
+            <div class="icon-box">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold mb-1">Email Us</h6>
+              <p class="mb-0 text-muted">reservations@example.com</p>
+            </div>
+          </div>
+
+          <!-- Call Button -->
+          <h6 class="fw-bold mt-2">Prefer to call?</h6>
+          <a href="tel:+14015558792" class="btn call-btn mt-2">
+            <i class="fa-solid fa-phone me-2"></i> Call for Reservations
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class=" row  time-box mt-5 d-flex ">
+      <div class="col-lg-4 col-md-12 col-12 mb-4">
+        <div>
+          <div class="card h-100 align-items-center justify-content-center">
+            <div class="icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3 class="card-title">Address</h3>
+            <p class="text-center text-muted mb-0">847 Broadway Avenue <br> New York, NY 10003</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 col-md-12 col-12 mb-4">
+        <div>
+          <div class="card hours-card">
+            <div class="card-top text-center">
+              <div class="icon">⏰</div>
+              <h3 class="card-title">Operating Hours</h3>
+            </div>
+
+            <ul class="hours-list">
+              <li>
+                <span class="days">Tuesday - Thursday</span>
+                <span class="time"><span class="time-range">5:00 PM - 10:00 PM</span></span>
+              </li>
+              <li>
+                <span class="days">Friday - Saturday</span>
+                <span class="time"><span class="time-range">5:00 PM - 11:00 PM</span></span>
+              </li>
+              <li>
+                <span class="days">Sunday</span>
+                <span class="time"><span class="time-range">4:00 PM - 9:00 PM</span></span>
+              </li>
+              <li>
+                <span class="days">Monday</span>
+                <span class="time closed">Closed</span>
+              </li>
+            </ul>
+
+            <div class="card-actions d-flex justify-content-center mt-3">
+              <a href="#" class="action-btn btn-static">Book a Table</a>
+              <a href="#" class="action-btn btn-hover">Get Direction</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 col-md-12 col-12 mb-4">
+        <div>
+          <div class="card h-100 align-items-center justify-content-center">
+            <div class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3 class="card-title">Reservation</h3>
+            <p class="text-center text-muted mb-0">+1 (5555) 7037-887 <br>Recommended 24-48 hours booking</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  </div>
+
+  <section id="chefs" class="chefs-section py-3 reveal-left">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="text-center mb-3">
+        <h2 class="display-6 fw-bold section-title">Chefs</h2>
+        <div class="underline mx-auto">
+          <span></span>
+        </div>
+        <p class="text-muted">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <!-- Executive Chef Feature -->
+      <div class="row align-items-center mb-4 pb-3">
+        <!-- Left Details -->
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <span class="badge rounded-pill custom-badge mb-3">EXECUTIVE CHEF</span>
+          <h2 class="fw-bold display-5 mb-2">Eliot Johnson</h2>
+          <div class="d-flex align-items-center mb-4">
+            <span class="display-5 fw-bold text-accent me-2">15+</span>
+            <span class="h6 text-uppercase fw-bold letter-spacing-2 mb-0">YEARS OF EXCELLENCE</span>
+          </div>
+
+          <p class="text-muted mb-4">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Mauris viverra
+            veniam sit amet lacus cursus, vel blandit libero tempus. Nulla facilisi morbi tempus iaculis urna id
+            volutpat lacus laoreet non curabitur gravida.
+          </p>
+
+          <div class="awards-list">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fa-solid fa-trophy text-accent me-3 fs-4"></i>
+              <span class="fw-bold text-dark">Culinary Excellence Award 2023</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-star text-accent me-3 fs-4"></i>
+              <span class="fw-bold text-dark">Michelin Featured Restaurant</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-lg-7">
+          <div class="position-relative chef-main-img-wrapper">
+            <img src="chef-main.png" class="img-fluid rounded-4 shadow-lg w-100" alt="Chef Eliot Johnson">
+            <div class="signature-badge">
+              <span class="signature-font">Eliot Johnson</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Grid -->
+      <div class="row g-4">
+        <!-- Team Member 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chef-card  h-100">
+            <div class="chef-img-box  rounded-4 overflow-hidden position-relative mb-3">
+              <img src="chef-member-1.png" class="img-fluid " alt="Elena Vasquez">
+            </div>
+            <div class="text-center">
+              <h5 class="fw-bold mb-1">Elena Vasquez</h5>
+              <p class="text-accent text-uppercase small fw-bold mb-2">HEAD PASTRY CHEF</p>
+              <p class="small text-muted mb-0">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chef-card h-100">
+            <div class="chef-img-box rounded-4 overflow-hidden position-relative mb-3">
+              <img src="chef-member-2.png" class="img-fluid w-100" alt="David Thompson">
+            </div>
+            <div class="text-center">
+              <h5 class="fw-bold mb-1">David Thompson</h5>
+              <p class="text-accent text-uppercase small fw-bold mb-2">SOUS CHEF</p>
+              <p class="small text-muted mb-0">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi
+                ut
+                aliquip ex ea commodo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chef-card h-100">
+            <div class="chef-img-box rounded-4 overflow-hidden position-relative mb-3">
+              <img src="chef-member-3.png" class="img-fluid w-100" alt="Maria Santos">
+            </div>
+            <div class="text-center">
+              <h5 class="fw-bold mb-1">Maria Santos</h5>
+              <p class="text-accent text-uppercase small fw-bold mb-2">KITCHEN MANAGER</p>
+              <p class="small text-muted mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chef-card h-100">
+            <div class="chef-img-box rounded-4 overflow-hidden position-relative mb-3">
+              <img src="chef-member-4.png" class="img-fluid w-100" alt="Roberto Kim">
+            </div>
+            <div class="text-center">
+              <h5 class="fw-bold mb-1">Roberto Kim</h5>
+              <p class="text-accent text-uppercase small fw-bold mb-2">WINE SOMMELIER</p>
+              <p class="small text-muted mb-0">Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+                officia
+                deserunt mollit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="events" class="events-section py-5 reveal-right">
+    <div class="container">
+
+      <!-- Added Standard Section Header -->
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold section-title">Events</h2>
+        <div class="underline mx-auto">
+          <span></span>
+        </div>
+        <p class="text-muted">Check upcoming events, tastings, and private dining experiences.</p>
+      </div>
+
+      <!-- Header Content -->
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="display-6 fw-bold mb-3 section-title">Exceptional Events & Private Dining</h2>
+          <p class="text-muted mb-4">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis.
+          </p>
+          <div class="d-flex gap-5">
+            <div>
+              <span class="display-6 fw-bold text-accent">500+</span>
+              <p class="small text-uppercase fw-bold text-muted">EVENTS HOSTED</p>
+            </div>
+            <div>
+              <span class="display-6 fw-bold text-accent">200</span>
+              <p class="small text-uppercase fw-bold text-muted">MAX CAPACITY</p>
+            </div>
+          </div>
+          <button class="btn btn-outline-danger rounded-pill px-4 py-2 mt-4 d-flex align-items-center gap-2">
+            <i class="fa-regular fa-calendar-check"></i> Book Your Event Today
+          </button>
+        </div>
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img src="events-main.png" class="img-fluid rounded-4 shadow-lg w-100" alt="Private Dining">
+          </div>
+        </div>
+      </div>
+
+      <!-- Packages -->
+      <div class="text-center mb-4 mt-5 pt-4">
+        <h3 class="fw-bold h2 section-title">Choose Your Perfect Package</h3>
+        <p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam
+        </p>
+      </div>
+
+      <div class="row g-4 mb-5 justify-content-center">
+        <!-- Basic Package -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 h-100 shadow-sm package-card">
+            <div class="card-body text-center p-3 p-lg-4">
+              <div class="icon-circle mb-3 mx-auto bg-light-orange text-accent" style="width: 60px; height: 60px;">
+                <i class="fa-regular fa-gem fs-4"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Premium Package</h5>
+              <div class="mb-3">
+                <span class="display-6 fw-bold text-accent">$129</span>
+                <span class="text-muted small">/ per person</span>
+              </div>
+              <hr class="mb-3">
+              <ul class="list-unstyled text-start text-secondary mb-4 vstack gap-2 small">
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> 5-course gourmet menu</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Premium wine selection</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Dedicated event coordinator</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Custom table arrangements</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Professional photography</li>
+              </ul>
+              <button class="btn btn-light-orange w-100 rounded-pill fw-bold btn-sm py-2">10-80 guests</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard Package -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-accent h-100 shadow-lg scale-up package-card position-relative">
+            <span
+              class="badge bg-accent position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-1 small">Most
+              Popular</span>
+            <div class="card-body text-center p-3 p-lg-4">
+              <div class="icon-circle mb-3 mx-auto bg-accent text-white" style="width: 60px; height: 60px;">
+                <i class="fa-regular fa-star fs-4"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Standard Package</h5>
+              <div class="mb-3">
+                <span class="display-6 fw-bold text-accent">$89</span>
+                <span class="text-muted small">/ per person</span>
+              </div>
+              <hr class="mb-3">
+              <ul class="list-unstyled text-start text-secondary mb-4 vstack gap-2 small">
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> 3-course dinner menu</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Welcome cocktail hour</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Event planning assistance</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Audio/visual equipment</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Complimentary parking</li>
+              </ul>
+              <button class="btn btn-accent-solid w-100 rounded-pill fw-bold text-white btn-sm py-2">20-120
+                guests</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Essentials Package -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 h-100 shadow-sm package-card">
+            <div class="card-body text-center p-3 p-lg-4">
+              <div class="icon-circle mb-3 mx-auto bg-light-orange text-accent" style="width: 60px; height: 60px;">
+                <i class="fa-regular fa-heart fs-4"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Essentials Package</h5>
+              <div class="mb-3">
+                <span class="display-6 fw-bold text-accent">$59</span>
+                <span class="text-muted small">/ per person</span>
+              </div>
+              <hr class="mb-3">
+              <ul class="list-unstyled text-start text-secondary mb-4 vstack gap-2 small">
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Buffet style dinner</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> House wine & beer</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Basic decorations</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> Standard seating</li>
+                <li><i class="fa-regular fa-circle-check text-accent me-2"></i> 4-hour venue rental</li>
+              </ul>
+              <button class="btn btn-light-orange w-100 rounded-pill fw-bold btn-sm py-2">15-60 guests</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="misc-7.webp" class="img-fluid rounded-3 h-100 object-fit-cover shadow-sm w-100 event-gallery-img"
+            alt="Event Gallery 1">
+        </div>
+        <div class="col-md-4">
+          <img src="starter-3.webp" class="img-fluid rounded-3 h-100 object-fit-cover shadow-sm w-100 event-gallery-img"
+            alt="Event Gallery 2">
+        </div>
+        <div class="col-md-4">
+          <img src="starter-6.webp" class="img-fluid rounded-3 h-100 object-fit-cover shadow-sm w-100 event-gallery-img"
+            alt="Event Gallery 3">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section py-5 reveal-left">
+    <div class="container">
+
+      <!-- Contact Header -->
+      <div class="text-center mb-4">
+        <h2 class="display-6 fw-bold section-title">Contact</h2>
+        <div class="underline mx-auto">
+          <span></span>
+        </div>
+        <p class="text-muted">Feel free to reach out with any questions about bookings or events.</p>
+      </div>
+
+      <div class="row align-items-stretch g-3">
+
+        <!-- Contact Info Column -->
+        <div class="col-lg-4">
+          <div class="bg-white p-4 rounded-4 h-100 shadow-sm">
+            <h4 class="fw-bold mb-3">Contact Information</h4>
+            <div class="underline-left mb-3"></div>
+
+            <p class="text-muted mb-4 small">Feel free to reach out with any questions about the book, speaking
+              engagements, or media inquiries.</p>
+
+            <div class="d-flex mb-3">
+              <div class="icon-box-small text-accent me-3" style="width: 36px; height: 36px;">
+                <i class="fa-regular fa-envelope fs-6"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Email :</h6>
+                <p class="text-muted mb-0 small">author@example.com</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="icon-box-small text-accent me-3" style="width: 36px; height: 36px;">
+                <i class="fa-solid fa-phone fs-6"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Phone :</h6>
+                <p class="text-muted mb-0 small">+1 (555) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4">
+              <div class="icon-box-small text-accent me-3" style="width: 36px; height: 36px;">
+                <i class="fa-solid fa-location-dot fs-6"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Address :</h6>
+                <p class="text-muted mb-0 small">5625 Riverside Avenue<br>Newport, RI 02840</p>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="d-flex gap-2">
+              <a href="#" class="social-btn-small" style="width: 32px; height: 32px; font-size: 0.8rem;"><i
+                  class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="social-btn-small" style="width: 32px; height: 32px; font-size: 0.8rem;"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-btn-small" style="width: 32px; height: 32px; font-size: 0.8rem;"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-btn-small" style="width: 32px; height: 32px; font-size: 0.8rem;"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="col-lg-8">
+          <div class="bg-white p-4 rounded-4 h-100 shadow-sm border-top-accent">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6 mb-2">
+                  <label class="form-label fw-bold small">Your Name</label>
+                  <input type="text" class="form-control bg-light border-0 py-2" placeholder="John Doe">
+                </div>
+                <div class="col-md-6 mb-2">
+                  <label class="form-label fw-bold small">Your Email</label>
+                  <input type="email" class="form-control bg-light border-0 py-2" placeholder="john@example.com">
+                </div>
+                <div class="col-12 mb-2">
+                  <label class="form-label fw-bold small">Subject</label>
+                  <input type="text" class="form-control bg-light border-0 py-2" placeholder="I loved your book!">
+                </div>
+                <div class="col-12 mb-3">
+                  <label class="form-label fw-bold small">Message</label>
+                  <textarea class="form-control bg-light border-0 py-2" rows="4"
+                    placeholder="Your message here..."></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary rounded-pill px-5 py-2 fw-bold">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section pt-5 mt-5 reveal-right">
+    <div class="container pt-5">
+      <div class="row g-4 pb-5">
+
+        <!-- Company Info -->
+        <div class="col-lg-4 col-md-6">
+          <h3 class="fw-bold mb-4">Savora</h3>
+          <p class="text-muted mb-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+            curae. Donec velit neque auctor sit amet aliquam vel ullamcorper sit amet ligula.</p>
+
+          <h6 class="fw-bold text-dark mb-3">Stay Updated</h6>
+          <div class="input-group mb-3 newsletter-input">
+            <input type="email" class="form-control border-0 bg-light rounded-start-pill ps-4"
+              placeholder="Enter your email">
+            <button class="btn btn-accent-solid rounded-end-pill px-4" type="button"><i
+                class="fa-regular fa-paper-plane"></i></button>
+          </div>
+        </div>
+
+        <!-- Links 1 -->
+        <div class="col-lg-2 col-md-6 ms-auto">
+          <h5 class="fw-bold mb-4 footer-heading">Company</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Links 2 -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-4 footer-heading">Services</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Private Dining</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Wine Tasting</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+
+        <!-- Get in Touch -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-4 footer-heading">Get in Touch</h5>
+
+          <div class="d-flex mb-3">
+            <div class="footer-icon me-3">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <p class="text-muted small mb-0">2617 Maple Avenue<br>Los Angeles, CA 90210<br>United States</p>
+          </div>
+
+          <div class="d-flex mb-3">
+            <div class="footer-icon me-3">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <p class="text-muted small mb-0">+1 (555) 987-6543</p>
+          </div>
+
+          <div class="d-flex mb-4">
+            <div class="footer-icon me-3">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <p class="text-muted small mb-0">contact@example.com</p>
+          </div>
+
+          <div class="d-flex gap-2">
+            <a href="#" class="footer-social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="footer-social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="footer-social-btn"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Footer -->
+      <div class="border-top py-4">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="text-muted small mb-0">&copy; Copyright <strong class="text-dark">Savora</strong>. All Rights
+              Reserved</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+            <p class="text-muted small mt-1 mb-0">Designed by <span class="text-accent">MALIK WAQAS</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JS fallback: when a float image is hovered/focused, add class to disable parent hover
+    (function () {
+      function addListeners() {
+        document.querySelectorAll('.float-img').forEach(function (img) {
+          img.addEventListener('mouseenter', function () {
+            const parent = img.closest('.hero-section'); if (parent) parent.classList.add('disable-parent-hover');
+          });
+          img.addEventListener('mouseleave', function () {
+            const parent = img.closest('.hero-section'); if (parent) parent.classList.remove('disable-parent-hover');
+          });
+          img.addEventListener('focus', function () {
+            const parent = img.closest('.hero-section'); if (parent) parent.classList.add('disable-parent-hover');
+          });
+          img.addEventListener('blur', function () {
+            const parent = img.closest('.hero-section'); if (parent) parent.classList.remove('disable-parent-hover');
+          });
+        });
+      }
+      if (document.readyState !== 'loading') addListeners(); else document.addEventListener('DOMContentLoaded', addListeners);
+    })();
+
+    // Active Link Scroll Spy
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll("section, div[id]");
+      const navLi = document.querySelectorAll(".navbar-nav .nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= (sectionTop - 150)) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLi.forEach((li) => {
+          li.classList.remove("active");
+          if (li.getAttribute("href").includes(current) && current !== "") {
+            li.classList.add("active");
+          }
+        });
+      });
+
+      // Scroll Reveal Logic
+      const revealElements = document.querySelectorAll('[class*="reveal-"]');
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, { threshold: 0.1 });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      // Dark Mode Logic
+      const themeToggle = document.getElementById('themeToggle');
+      const themeIcon = themeToggle.querySelector('i');
+      const body = document.body;
+
+      // Check for saved theme
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        body.setAttribute('data-theme', savedTheme);
+        updateIcon(savedTheme);
+      }
+
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcon(newTheme);
+      });
+
+      function updateIcon(theme) {
+        if (theme === 'dark') {
+          themeIcon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+          themeIcon.classList.replace('fa-sun', 'fa-moon');
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

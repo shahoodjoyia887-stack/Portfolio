@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Shahood Ahmad</title>
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        /*=============== GOOGLE FONTS ===============*/
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+
+        :root {
+            --first-color: #8b5cf6;
+            --first-color-alt: #7c3aed;
+            --second-color: #06b6d4;
+            --title-color: #f8fafc;
+            --text-color: #94a3b8;
+            --text-color-light: #64748b;
+            --body-color: #08070b;
+            --container-color: rgba(255, 255, 255, 0.03);
+            --border-color: rgba(255, 255, 255, 0.08);
+
+            --body-font: 'Outfit', sans-serif;
+            --second-font: 'Montserrat', sans-serif;
+            --h1-font-size: 2.5rem;
+            --h2-font-size: 1.75rem;
+            --h3-font-size: 1.25rem;
+            --normal-font-size: 1rem;
+            --small-font-size: .875rem;
+            --smaller-font-size: .813rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            background-color: var(--body-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--title-color);
+            font-family: var(--second-font);
+            font-weight: 700;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /*=============== PREMIUM BACKGROUND ===============*/
+        .bg-blobs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            filter: blur(100px);
+        }
+
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: blob-move 20s infinite alternate;
+        }
+
+        .blob-1 {
+            background: var(--first-color);
+            top: -10%;
+            right: -5%;
+        }
+
+        .blob-2 {
+            background: var(--second-color);
+            bottom: -10%;
+            left: -5%;
+            animation-delay: -5s;
+        }
+
+        @keyframes blob-move {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            50% {
+                transform: translate(100px, 50px) scale(1.1);
+            }
+
+            100% {
+                transform: translate(-50px, 100px) scale(0.9);
+            }
+        }
+
+        /*=============== LAYOUT ===============*/
+        .cv__container {
+            max-width: 1000px;
+            margin: 4rem auto;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+        }
+
+        /*=============== SIDEBAR ===============*/
+        .cv__sidebar {
+            background: rgba(139, 92, 246, 0.05);
+            padding: 4rem 2.5rem;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .cv__profile {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .cv__img-box {
+            width: 180px;
+            height: 180px;
+            border-radius: 2rem;
+            overflow: hidden;
+            border: 3px solid var(--first-color);
+            margin: 0 auto 2rem;
+            box-shadow: 0 15px 30px rgba(139, 92, 246, 0.2);
+            transform: rotate(-3deg);
+        }
+
+        .cv__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cv__name {
+            font-size: 2.25rem;
+            margin-bottom: .5rem;
+            letter-spacing: -1px;
+        }
+
+        .cv__role {
+            color: var(--first-color);
+            font-size: var(--small-font-size);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cv__section {
+            margin-bottom: 3.5rem;
+        }
+
+        .cv__section-title {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            padding-bottom: .75rem;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--first-color);
+        }
+
+        .cv__contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+            font-size: var(--small-font-size);
+        }
+
+        .cv__contact-icon {
+            color: var(--second-color);
+            background: rgba(6, 182, 212, 0.1);
+            padding: .5rem;
+            border-radius: .75rem;
+            font-size: 1.25rem;
+        }
+
+        .cv__skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .75rem;
+        }
+
+        .cv__skill-tag {
+            background: rgba(255, 255, 255, 0.05);
+            padding: .5rem 1rem;
+            border-radius: .75rem;
+            font-size: var(--smaller-font-size);
+            border: 1px solid var(--border-color);
+            transition: .3s;
+        }
+
+        .cv__skill-tag:hover {
+            border-color: var(--first-color);
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        /*=============== MAIN CONTENT ===============*/
+        .cv__main {
+            padding: 4rem;
+        }
+
+        .cv__about {
+            margin-bottom: 4rem;
+        }
+
+        .cv__content-title {
+            font-size: var(--h2-font-size);
+            margin-bottom: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .cv__content-icon {
+            color: var(--first-color);
+            font-size: 2rem;
+        }
+
+        .cv__item {
+            margin-bottom: 3rem;
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .cv__item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--first-color);
+            box-shadow: 0 0 10px var(--first-color);
+        }
+
+        .cv__item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .cv__item-year {
+            font-size: var(--smaller-font-size);
+            background: linear-gradient(90deg, var(--first-color), var(--first-color-alt));
+            color: #fff;
+            padding: .25rem .75rem;
+            border-radius: .5rem;
+            font-weight: 700;
+        }
+
+        .cv__item-subtitle {
+            color: var(--second-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .cv__item-list li {
+            font-size: var(--small-font-size);
+            margin-bottom: .75rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .cv__item-list li::before {
+            content: '\eb7a';
+            font-family: 'remixicon';
+            position: absolute;
+            left: 0;
+            color: var(--first-color);
+        }
+
+        /*=============== ACTION BAR ===============*/
+        .cv__actions {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            background: rgba(8, 7, 11, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            padding: .75rem 1.25rem;
+            border-radius: 5rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(139, 92, 246, 0.1);
+            z-index: 100;
+        }
+
+        .cv__action-btn {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .6rem 1.2rem;
+            border-radius: 3rem;
+            font-family: var(--body-font);
+            font-size: .813rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: .3s;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .cv__action-btn i {
+            font-size: 1.1rem;
+        }
+
+        .btn-home {
+            background: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-home:hover {
+            color: var(--title-color);
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-download {
+            background: linear-gradient(135deg, var(--first-color), var(--first-color-alt));
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(139, 92, 246, 0.6);
+        }
+
+        .btn-print {
+            background: transparent;
+            color: var(--second-color);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+        }
+
+        .btn-print:hover {
+            background: rgba(6, 182, 212, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .cv__actions-divider {
+            width: 1px;
+            height: 24px;
+            background: var(--border-color);
+            border-radius: 1px;
+        }
+
+        @media print {
+
+            .btn-float,
+            .bg-blobs {
+                display: none;
+            }
+
+            body {
+                background: #fff;
+                color: #000;
+            }
+
+            .cv__container {
+                margin: 0;
+                box-shadow: none;
+                border: none;
+                grid-template-columns: 280px 1fr;
+            }
+
+            .cv__sidebar {
+                background: #f8fafc !important;
+            }
+
+            .cv__container * {
+                color: #000 !important;
+                border-color: #e2e8f0 !important;
+            }
+
+            .cv__item-year {
+                background: #000 !important;
+                color: #fff !important;
+            }
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 900px) {
+            .cv__container {
+                grid-template-columns: 1fr;
+                margin: 1rem;
+                border-radius: 1rem;
+            }
+
+            .cv__sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .cv__main {
+                padding: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="cv__container">
+        <!-- SIDEBAR -->
+        <aside class="cv__sidebar">
+            <div class="cv__profile">
+                <div class="cv__img-box">
+                    <img src="assets/img/shahood-img-2.png" alt="Shahood Ahmad" class="cv__img">
+                </div>
+                <h1 class="cv__name">Shahood Ahmad</h1>
+                <span class="cv__role">Software Engineer & UI/UX Designer</span>
+            </div>
+
+            <div class="cv__section">
+                <h3 class="cv__section-title">Contact</h3>
+                <div class="cv__contact-item">
+                    <i class="ri-mail-line cv__contact-icon"></i>
+                    <div>
+                        <strong>Email</strong><br>
+                        <span>shahoodjoyia887@gmail.com</span>
+                    </div>
+                </div>
+                <div class="cv__contact-item">
+                    <i class="ri-whatsapp-line cv__contact-icon"></i>
+                    <div>
+                        <strong>WhatsApp</strong><br>
+                        <span>+92 334 7037887</span>
+                    </div>
+                </div>
+                <div class="cv__contact-item">
+                    <i class="ri-map-pin-line cv__contact-icon"></i>
+                    <div>
+                        <strong>Location</strong><br>
+                        <span>Lahore, Pakistan</span>
+                    </div>
+                </div>
+                <div class="cv__contact-item">
+                    <i class="ri-linkedin-box-line cv__contact-icon"></i>
+                    <div>
+                        <strong>LinkedIn</strong><br>
+                        <span>linkedin.com/in/shahood</span>
+                    </div>
+                </div>
+                <div class="cv__contact-item">
+                    <i class="ri-github-line cv__contact-icon"></i>
+                    <div>
+                        <strong>GitHub</strong><br>
+                        <span>github.com/shahood</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv__section">
+                <h3 class="cv__section-title">Tech Stack</h3>
+                <div class="cv__skill-list">
+                    <span class="cv__skill-tag">HTML5</span>
+                    <span class="cv__skill-tag">CSS3</span>
+                    <span class="cv__skill-tag">JavaScript</span>
+                    <span class="cv__skill-tag">React</span>
+                    <span class="cv__skill-tag">Node JS</span>
+                    <span class="cv__skill-tag">Bootstrap</span>
+                    <span class="cv__skill-tag">Git & GitHub</span>
+                    <span class="cv__skill-tag">Figma</span>
+                    <span class="cv__skill-tag">Adobe XD</span>
+                    <span class="cv__skill-tag">Responsive Design</span>
+                </div>
+            </div>
+
+            <div class="cv__section">
+                <h3 class="cv__section-title">Languages</h3>
+                <div class="cv__contact-item">
+                    <i class="ri-translate-2 cv__contact-icon"></i>
+                    <div>
+                        <strong>Urdu</strong><br>
+                        <span>Native</span>
+                    </div>
+                </div>
+                <div class="cv__contact-item">
+                    <i class="ri-translate-2 cv__contact-icon"></i>
+                    <div>
+                        <strong>English</strong><br>
+                        <span>Professional</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="cv__main">
+            <section class="cv__about">
+                <h2 class="cv__content-title"><i class="ri-user-smile-line cv__content-icon"></i> About Me</h2>
+                <p>
+                    A passionate and creative <strong>Software Engineer</strong> from Lahore, Pakistan,
+                    specializing in building beautiful, performant web applications. With a strong eye for
+                    design and a solid engineering foundation, I craft digital experiences that are both
+                    visually stunning and technically sound.
+                </p>
+            </section>
+
+            <section class="cv__content">
+                <h2 class="cv__content-title"><i class="ri-briefcase-line cv__content-icon"></i> Experience</h2>
+                <div class="cv__item">
+                    <div class="cv__item-header">
+                        <h3>Web Developer & Designer</h3>
+                        <span class="cv__item-year">2025 – Present</span>
+                    </div>
+                    <span class="cv__item-subtitle">Freelance</span>
+                    <ul class="cv__item-list">
+                        <li>Designing and implementing responsive portfolio websites.</li>
+                        <li>Crafting unique UI/UX designs using Figma and Adobe XD.</li>
+                        <li>Optimizing web performance and accessibility.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cv__content">
+                <h2 class="cv__content-title"><i class="ri-graduation-cap-line cv__content-icon"></i> Education</h2>
+
+                <div class="cv__item">
+                    <div class="cv__item-header">
+                        <h3>BS Software Engineering</h3>
+                        <span class="cv__item-year">2021 – 2025</span>
+                    </div>
+                    <span class="cv__item-subtitle">Bachelor's Degree · University of Engineering & Technology</span>
+                </div>
+
+                <div class="cv__item">
+                    <div class="cv__item-header">
+                        <h3>ICS (Intermediate)</h3>
+                        <span class="cv__item-year">2021</span>
+                    </div>
+                    <span class="cv__item-subtitle">FSc / ICS · Government College</span>
+                </div>
+
+                <div class="cv__item">
+                    <div class="cv__item-header">
+                        <h3>Matriculation (Matric)</h3>
+                        <span class="cv__item-year">2019</span>
+                    </div>
+                    <span class="cv__item-subtitle">Science Group · Government High School</span>
+                </div>
+            </section>
+
+            <section class="cv__content">
+                <h2 class="cv__content-title"><i class="ri-rocket-line cv__content-icon"></i> Top Projects</h2>
+                <div class="cv__item">
+                    <div class="cv__item-header">
+                        <h3>Savora Restaurant</h3>
+                        <span class="cv__item-year">2025</span>
+                    </div>
+                    <span class="cv__item-subtitle">Restaurant Website</span>
+                    <p style="font-size: var(--small-font-size); margin-top: .5rem;">Premium restaurant management and
+                        reservation system with a luxury aesthetic, dynamic food menu and smooth UI/UX.</p>
+                </div>
+                <div class="cv__item">
+                    <div class="cv__item-header">
+                        <h3>Landio Landing Page</h3>
+                        <span class="cv__item-year">2025</span>
+                    </div>
+                    <span class="cv__item-subtitle">Product Landing Page</span>
+                    <p style="font-size: var(--small-font-size); margin-top: .5rem;">Clean and professional product
+                        showcase landing page with responsive layout and modern design.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Action Bar -->
+    <div class="cv__actions">
+        <a href="shahood portfolio html.html" class="cv__action-btn btn-home">
+            <i class="ri-home-4-line"></i> Home
+        </a>
+        <div class="cv__actions-divider"></div>
+        <button class="cv__action-btn btn-download" onclick="window.print()">
+            <i class="ri-download-2-line"></i> Download PDF
+        </button>
+        <div class="cv__actions-divider"></div>
+        <button class="cv__action-btn btn-print" onclick="window.print()">
+            <i class="ri-printer-line"></i> Print
+        </button>
+    </div>
+</body>
+
+</html>

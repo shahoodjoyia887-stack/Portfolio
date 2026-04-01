@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <meta name="description"
+        content="Shahood Ahmad - Creative Front End Developer & Designer. Specialist in HTML, CSS, JavaScript, and modern web frameworks.">
+    <meta name="keywords" content="Shahood Ahmad, Web Developer, Designer, Portfolio, Frontend Developer, Lahore">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shahood.com/">
+    <meta property="og:title" content="Shahood Ahmad | Portfolio">
+    <meta property="og:description"
+        content="Creative Front End Developer & Designer building exceptional digital experiences.">
+    <meta property="og:image" content="assets/img/home-perfil.png">
+
+    <title>Shahood Ahmad | Portfolio</title>
+</head>
+
+<body>
+    <!-- BACKGROUND DECORATIONS -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor"></div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <div class="nav__logo-img">S</div>
+                <span class="nav__logo-text">Shahood</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Journey</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Shahood <br> Ahmad</h1>
+
+                    <div class="home__profession">
+                        <span class="home__split">Creative</span>
+                        <div class="home__profession-titles">
+                            <span class="home__profession-1">Developer</span>
+                            <span class="home__profession-2">& Designer</span>
+                        </div>
+                    </div>
+
+                    <p class="home__description">
+                        I build exceptional digital experiences as a <b>Software Engineer</b>,
+                        passionate about <b>React</b> and <b>Modern Web Technologies</b>.
+                    </p>
+
+                    <div class="home__btns">
+                        <a href="#contact" class="button">
+                            Contact Me <i class="ri-send-plane-line"></i>
+                        </a>
+
+                        <a href="cv.html" class="button home__cv"
+                            style="background: transparent; border: 2px solid var(--first-color); color: var(--title-color); box-shadow: none;">
+                            Resume <i class="ri-article-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://linkedin.com/in/shahood" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=923347037887&text=Hello!" target="_blank"
+                            class="home__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="https://github.com/shahood" target="_blank" class="home__social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <img src="assets/img/home-adobe.png" alt="Shahood Ahmad" class="home__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__images">
+                    <img src="assets/img/shahood-img-2.png" alt="about image" class="about__img">
+                </div>
+
+                <div class="about__data">
+                    <h2 class="section__title">
+                        <span>Creativity</span> <br> Is My Passion
+                    </h2>
+
+                    <p class="about__description">
+                        I am a web developer and designer with a strong passion for creativity and innovation. I enjoy
+                        experimenting with new ideas, tools, and skills to build modern and effective web solutions.
+                    </p>
+
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class="ri-medal-line about__icon"></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">2+ Years</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class="ri-briefcase-line about__icon"></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">10+ Projects</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class="ri-customer-service-2-line about__icon"></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <a href="cv.html" class="button">
+                        View CV <i class="ri-file-user-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">My <span>Technical</span> Skills</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <div class="skills__data">
+                        <div class="skills__item">
+                            <i class="ri-html5-fill" style="color: #E34F26;"></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+
+                        <div class="skills__item">
+                            <i class="ri-css3-fill" style="color: #1572B6;"></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+
+                        <div class="skills__item">
+                            <i class="ri-javascript-fill" style="color: #F7DF1E;"></i>
+                            <span class="skills__name">JavaScript</span>
+                        </div>
+
+                        <div class="skills__item">
+                            <i class="ri-reactjs-line" style="color: #61DAFB;"></i>
+                            <span class="skills__name">React</span>
+                        </div>
+
+                        <div class="skills__item">
+                            <i class="ri-bootstrap-fill" style="color: #7952B3;"></i>
+                            <span class="skills__name">Bootstrap</span>
+                        </div>
+
+                        <div class="skills__item">
+                            <i class="ri-github-fill"></i>
+                            <span class="skills__name">GitHub</span>
+                        </div>
+
+                        <div class="skills__item">
+                            <i class="ri-nodejs-line" style="color: #68A063;"></i>
+                            <span class="skills__name">Node JS</span>
+                        </div>
+
+                        <div class="skills__item">
+                            <i class="ri-figma-line" style="color: #F24E1E;"></i>
+                            <span class="skills__name">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== EXPERIENCE ====================-->
+        <section class="experience section" id="experience">
+            <h2 class="section__title">My <span>Journey</span></h2>
+
+            <div class="experience__container container grid">
+                <div class="experience__content">
+                    <div class="experience__data">
+                        <div class="experience__item">
+                            <div class="experience__header">
+                                <h3 class="experience__title">Web Developer & Designer</h3>
+                                <span class="experience__date">2025 - Present</span>
+                            </div>
+                            <p class="experience__description">
+                                Focusing on modern web technologies and creative designs. Building responsive and
+                                aesthetic digital solutions for various clients and personal projects.
+                            </p>
+                        </div>
+
+                        <div class="experience__item">
+                            <div class="experience__header">
+                                <h3 class="experience__title">Software Engineering</h3>
+                                <span class="experience__date">2021 - 2025</span>
+                            </div>
+                            <p class="experience__description">
+                                Completed advanced studies in Software Engineering, mastering core principles of
+                                programming, system design, and software development lifecycles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">
+                My <span>Incredible</span> Projects
+            </h2>
+
+            <div class="projects__container container swiper">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <article class="projects__card swiper-slide">
+                        <div class="projects__image">
+                            <img src="assets/img/project-1-preview.png" alt="Landio Landing Page" class="projects__img">
+                            <div class="projects__number">01</div>
+                        </div>
+
+                        <div class="projects__content">
+                            <h3 class="projects__title">Landio Landing Page</h3>
+                            <p class="projects__description">
+                                A modern and clean landing page designed for showcasing digital products. Responsive
+                                layout and professional aesthetic.
+                            </p>
+                            <a href="projects/landio/index.html" target="_blank" class="projects__button">
+                                View Project <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="projects__card swiper-slide">
+                        <div class="projects__image">
+                            <img src="assets/img/savora/savora-preview.png" alt="Savora Home" class="projects__img">
+                            <div class="projects__number">02</div>
+                        </div>
+
+                        <div class="projects__content">
+                            <h3 class="projects__title">Savora Restaurant</h3>
+                            <p class="projects__description">
+                                Premium restaurant website with dynamic food menu and reservation system. Luxury UI/UX
+                                experience.
+                            </p>
+                            <a href="projects/savora/index.html" target="_blank" class="projects__button">
+                                View Project <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">What I <span>Offer</span></h2>
+
+            <div class="services__container container grid">
+                <!-- Service 1 -->
+                <article class="services__card">
+                    <i class="ri-code-line services__icon"></i>
+                    <h2 class="services__title">Web Development</h2>
+                    <p class="services__description">
+                        Building professional, high-performance web applications using modern technologies like React,
+                        Node.js, and Next.js.
+                    </p>
+                </article>
+
+                <!-- Service 2 -->
+                <article class="services__card">
+                    <i class="ri-pen-nib-line services__icon"></i>
+                    <h2 class="services__title">UI/UX Design</h2>
+                    <p class="services__description">
+                        Creating stunning, user-centric designs with Figma and Adobe XD. Focused on aesthetic appeal and
+                        seamless interactions.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact <span>Me</span></h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__data">
+                    <div class="contact__card">
+                        <i class="ri-mail-line contact__card-icon"></i>
+                        <div>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">shahoodjoyia887@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class="ri-map-pin-line contact__card-icon"></i>
+                        <div>
+                            <h3 class="contact__card-title">Location</h3>
+                            <span class="contact__card-data">Lahore, Pakistan</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__card">
+                        <i class="ri-whatsapp-line contact__card-icon"></i>
+                        <div>
+                            <h3 class="contact__card-title">Chat</h3>
+                            <span class="contact__card-data">+92 334 7037887</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <input type="text" placeholder="Insert your name" class="contact__form-input">
+                            <label class="contact__form-tag">Name</label>
+                        </div>
+
+                        <div class="contact__form-div">
+                            <input type="email" placeholder="Insert your email" class="contact__form-input">
+                            <label class="contact__form-tag">Email</label>
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <textarea placeholder="Write your project details" class="contact__form-input"></textarea>
+                            <label class="contact__form-tag">Project</label>
+                        </div>
+
+                        <button type="submit" class="button">
+                            Send Message <i class="ri-send-plane-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== DIVIDER ====================-->
+    <div class="footer__divider">
+        <span class="footer__divider-line"></span>
+        <span class="footer__divider-icon"><i class="ri-code-s-slash-line"></i></span>
+        <span class="footer__divider-line"></span>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#home" class="nav__logo">
+                    <div class="nav__logo-img">S</div>
+                    <span class="nav__logo-text">Shahood</span>
+                </a>
+                <p class="footer__description">
+                    Software Engineer & UI/UX Designer. <br>
+                    "Transforming complex problems into elegant <br> digital solutions with passion and precision."
+                </p>
+            </div>
+
+            <ul class="footer__links">
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#experience" class="footer__link">Journey</a></li>
+                <li><a href="#projects" class="footer__link">Projects</a></li>
+            </ul>
+
+            <div class="footer__social">
+                <a href="https://linkedin.com/in/shahood" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://github.com/shahood" target="_blank" class="footer__social-link">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=923347037887" target="_blank" class="footer__social-link">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </div>
+
+            <div class="footer__made">
+                Made with <i class="ri-heart-fill"></i> by Shahood Ahmad
+            </div>
+
+            <p class="footer__copy">
+                &#169; <span id="current-year">2026</span> Shahood Ahmad. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
