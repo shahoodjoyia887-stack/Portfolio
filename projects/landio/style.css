@@ -90,10 +90,18 @@ body.dark-mode {
   backdrop-filter: blur(10px);
 }
 
-.navbar-scrolled {
-  padding: 10px 0 !important;
-  background-color: var(--glass-nav) !important;
-  box-shadow: 0 5px 20px var(--shadow) !important;
+@media (min-width: 992px) {
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+    
+    .navbar-scrolled {
+        padding: 10px 0 !important;
+        background-color: var(--glass-nav) !important;
+        box-shadow: 0 5px 20px var(--shadow) !important;
+    }
 }
 
 .main-head {

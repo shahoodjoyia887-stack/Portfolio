@@ -320,6 +320,17 @@ button {
 }
 
 @media screen and (max-width: 1150px) {
+  .header {
+    position: absolute;
+    background: transparent;
+  }
+
+  .scroll-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
   .nav__menu {
     position: fixed;
     top: 0;
