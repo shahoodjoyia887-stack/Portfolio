@@ -7,7 +7,6 @@ const navMenu = document.getElementById('nav-menu'),
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
-        document.body.style.overflow = 'hidden'
     })
 }
 
@@ -15,7 +14,6 @@ if (navToggle) {
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
-        document.body.style.overflow = 'initial'
     })
 }
 
@@ -28,6 +26,21 @@ const linkAction = () => {
     document.body.style.overflow = 'initial'
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/* Menu toggle with body scroll lock */
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+        document.body.style.overflow = 'hidden'
+    })
+}
+
+if (navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+        document.body.style.overflow = 'initial'
+    })
+}
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () => {
