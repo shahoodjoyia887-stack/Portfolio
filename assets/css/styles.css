@@ -325,12 +325,16 @@ button {
     top: -100%;
     left: 0;
     width: 100%;
-    background: rgba(8, 7, 11, 0.95);
-    backdrop-filter: blur(20px);
-    padding-block: 5rem 4rem;
+    height: 100vh;
+    background: rgba(8, 7, 11, 0.98);
+    backdrop-filter: blur(25px);
+    padding-block: 6rem 4rem;
     transition: .4s;
     flex-direction: column;
     row-gap: 3rem;
+    z-index: var(--z-fixed);
+    display: flex;
+    justify-content: center;
   }
 
   .nav__list {

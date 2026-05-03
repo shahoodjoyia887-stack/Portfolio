@@ -7,6 +7,7 @@ const navMenu = document.getElementById('nav-menu'),
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
+        document.body.style.overflow = 'hidden'
     })
 }
 
@@ -14,6 +15,7 @@ if (navToggle) {
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
+        document.body.style.overflow = 'initial'
     })
 }
 
@@ -23,6 +25,7 @@ const navLink = document.querySelectorAll('.nav__link')
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
+    document.body.style.overflow = 'initial'
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
