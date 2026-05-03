@@ -450,8 +450,9 @@ body.dark-mode p {
 }
 
 .container .feature-section img {
-  height: 400px;
-  width: 400px;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

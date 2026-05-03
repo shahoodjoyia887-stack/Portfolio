@@ -407,7 +407,8 @@ button {
 .home__btns {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .home__images {
@@ -444,17 +445,17 @@ button {
 /* Socials */
 .home__social {
   display: flex;
-  flex-direction: column;
-  row-gap: 1.25rem;
-  position: absolute;
-  left: -5rem;
-  bottom: 2rem;
+  flex-direction: row;
+  column-gap: 1.25rem;
+  position: static;
+  margin-top: 2rem;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
-  padding: 1.5rem .75rem;
+  padding: .75rem 1.5rem;
   border-radius: 3rem;
   border: 1px solid var(--border-color);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: max-content;
 }
 
 .home__social-link {
@@ -566,14 +567,14 @@ button {
 
 /*=============== SKILLS ===============*/
 .skills__container {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 .skills__content {
   background: var(--container-color);
   border: 1px solid var(--border-color);
-  padding: 2.5rem;
+  padding: 1.5rem;
   border-radius: 2rem;
   backdrop-filter: blur(10px);
 }
@@ -581,7 +582,7 @@ button {
 .skills__data {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .skills__item {
@@ -1181,6 +1182,17 @@ button {
     grid-template-columns: 400px 350px;
     align-items: center;
     padding-block: 0;
+  }
+
+  .home__social {
+    flex-direction: column;
+    row-gap: 1.25rem;
+    position: absolute;
+    left: -5rem;
+    bottom: 2rem;
+    padding: 1.5rem .75rem;
+    margin-top: 0;
+    width: auto;
   }
 
   .home__img {
