@@ -341,9 +341,22 @@ button {
 
   .nav__toggle,
   .nav__close {
-    display: block;
-    font-size: 1.5rem;
+    display: flex;
+    font-size: 1.75rem;
     color: var(--title-color);
+    cursor: pointer;
+    transition: .3s;
+    background: rgba(255, 255, 255, 0.05);
+    padding: .5rem;
+    border-radius: .75rem;
+    border: 1px solid var(--border-color);
+  }
+
+  .nav__toggle:hover,
+  .nav__close:hover {
+    color: var(--first-color);
+    background: rgba(139, 92, 246, 0.1);
+    border-color: var(--first-color);
   }
 
   .nav__close {

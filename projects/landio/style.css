@@ -118,6 +118,21 @@ ul li a {
   color: var(--text-color) !important;
 }
 
+/* Toggler Style */
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+}
+
 /* Hover and active color for navigation links */
 .navbar .nav-link:hover,
 .navbar .nav-link.active {

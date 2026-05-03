@@ -34,7 +34,7 @@
     <div class="loader"></div>
   </div>
 
-  <nav class="navbar navbar-expand-lg site-header py-3 sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg site-header navbar-light py-3 sticky-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="#">
         <h2 class="logo mb-0">landio</h2>
@@ -858,6 +858,7 @@
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
+        navbar.classList.replace('navbar-light', 'navbar-dark');
         icon.classList.replace('fa-moon', 'fa-sun');
       }
 
@@ -865,11 +866,13 @@
         body.classList.toggle('dark-mode');
         const isDark = body.classList.contains('dark-mode');
 
-        // Update icon
+        // Update Navbar Theme
         if (isDark) {
+          navbar.classList.replace('navbar-light', 'navbar-dark');
           icon.classList.replace('fa-moon', 'fa-sun');
           localStorage.setItem('theme', 'dark');
         } else {
+          navbar.classList.replace('navbar-dark', 'navbar-light');
           icon.classList.replace('fa-sun', 'fa-moon');
           localStorage.setItem('theme', 'light');
         }
