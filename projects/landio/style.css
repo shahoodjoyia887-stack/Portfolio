@@ -293,8 +293,14 @@ ul li a:hover {
 .hero h1 {
   color: var(--text-color);
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
 }
 
 .hero p {
@@ -335,11 +341,12 @@ body.dark-mode p {
 }
 
 .container.about-section .img-fluid {
-  height: 350px;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  object-fit: cover;
   border-radius: 15px;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 0 10px 30px var(--shadow);
   margin-bottom: 20px;
 }
 
@@ -348,9 +355,7 @@ body.dark-mode p {
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
 .container.feature-section {
@@ -959,6 +964,64 @@ hr {
 
 .fade-out {
   opacity: 0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767.98px) {
+  .hero {
+    margin-top: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    padding-inline: 1rem;
+  }
+
+  .container.about-section,
+  .container.feature-section,
+  .contact-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px 0;
+  }
+
+  .stat-card {
+    margin-bottom: 20px;
+  }
+
+  .feature-card {
+    padding: 25px;
+  }
+
+  .price-card {
+    margin-bottom: 30px;
+  }
+
+  .contact-left {
+    padding: 30px !important;
+  }
+  
+  .contact-section .bg-white {
+    padding: 30px !important;
+  }
+
+  .footer-area {
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+
+  .footer-text {
+    margin-inline: auto;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 .logo {

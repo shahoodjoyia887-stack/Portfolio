@@ -948,6 +948,18 @@
           }
         });
       }
+      // Close mobile menu on link click
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      const menuCollapse = document.getElementById('navbarNav');
+      const bsCollapse = new bootstrap.Collapse(menuCollapse, {toggle:false});
+      
+      navLinks.forEach((l) => {
+          l.addEventListener('click', () => {
+              if (window.innerWidth < 992) {
+                  bsCollapse.hide();
+              }
+          });
+      });
     </script>
 </body>
 

@@ -1345,3 +1345,84 @@ span {
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff !important;
 }
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .section-title {
+        font-size: 2rem !important;
+    }
+
+    .section-home {
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .hero-section {
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .float-img {
+        width: 100px;
+        height: 80px;
+        border-width: 3px;
+    }
+
+    .img-right {
+        right: -10px;
+    }
+
+    .img-left {
+        left: -10px;
+    }
+
+    .about-section .experience-badge {
+        padding: 15px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .menu-page .menu-card {
+        height: auto;
+    }
+
+    .menu-page .menu-img img {
+        height: 200px;
+    }
+
+    .book-tabel img {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.75rem !important;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .img-right, .img-left {
+        display: none; /* Hide floating images on very small screens to avoid clutter */
+    }
+}
