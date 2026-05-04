@@ -112,6 +112,7 @@ let swiperProjects = new Swiper(".projects__container", {
     loop: true,
     spaceBetween: 24,
     grabCursor: true,
+    slidesPerView: 1,
 
     pagination: {
         el: ".swiper-pagination",
@@ -158,8 +159,14 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__content, .about__data, .projects__container, .experience__content, .services__container, .contact__container, .footer__container`)
 sr.reveal(`.home__images`, { origin: 'bottom', delay: 700 })
-sr.reveal(`.about__images`, { origin: 'left', delay: 700 })
-sr.reveal(`.contact__content`, { origin: 'right', delay: 700 })
+
+// Avoid horizontal scroll on mobile by disabling side reveal
+if (window.innerWidth > 768) {
+    sr.reveal(`.about__images`, { origin: 'left', delay: 700 })
+    sr.reveal(`.contact__content`, { origin: 'right', delay: 700 })
+} else {
+    sr.reveal(`.about__images, .contact__content`, { origin: 'bottom', delay: 700 })
+}
 sr.reveal(`.skills__item`, { interval: 100 })
 sr.reveal(`.about__box`, { interval: 100 })
 sr.reveal(`.services__card`, { interval: 150 })
