@@ -688,6 +688,19 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 1150px) {
+  .skills__content {
+    max-width: 1000px;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills__content {
+    padding: 1rem .75rem;
+  }
+}
+
 .skills__data {
   display: flex;
   flex-wrap: wrap;
@@ -711,6 +724,13 @@ body {
   border: 1px solid var(--border-color);
   transition: .4s;
   width: 180px;
+}
+
+@media screen and (min-width: 1150px) {
+  .skills__item {
+    width: 220px;
+    padding: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
