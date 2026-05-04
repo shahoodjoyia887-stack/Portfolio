@@ -185,12 +185,19 @@ button {
   }
 
   50% {
-    transform: translate(100px, 50px) scale(1.1);
+    transform: translate(50px, 20px) scale(1.1);
   }
 
   100% {
-    transform: translate(-50px, 100px) scale(0.9);
+    transform: translate(-20px, 50px) scale(0.9);
   }
+}
+
+/* Ensure no horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 /*=============== SCROLL PROGRESS ===============*/
@@ -404,7 +411,13 @@ button {
 }
 
 .home__content {
-  text-align: left;
+  text-align: center;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__content {
+    text-align: left;
+  }
 }
 
 .home__greeting {
@@ -442,13 +455,27 @@ button {
   margin-bottom: 2rem;
   max-width: 400px;
   line-height: 1.6;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__description {
+    margin-inline: initial;
+  }
 }
 
 .home__btns {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__btns {
+    justify-content: flex-start;
+  }
 }
 
 .home__images {
@@ -502,6 +529,13 @@ button {
   border: 1px solid var(--border-color);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: max-content;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__social {
+    margin-inline: initial;
+  }
 }
 
 .home__social-link {
@@ -554,7 +588,13 @@ button {
 }
 
 .about__data {
-  text-align: left;
+  text-align: center;
+}
+
+@media screen and (min-width: 1150px) {
+  .about__data {
+    text-align: left;
+  }
 }
 
 .about__info {
@@ -1180,6 +1220,23 @@ button {
   .contact__data {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
+  }
+}
+
+/* For small devices fix centering */
+@media screen and (max-width: 575px) {
+  .home__profession {
+    justify-content: center;
+  }
+  
+  .about__info {
+    justify-content: center;
+  }
+  
+  .contact__card {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1rem;
   }
 }
 
